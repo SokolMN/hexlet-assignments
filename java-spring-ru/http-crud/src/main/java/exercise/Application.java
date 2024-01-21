@@ -60,7 +60,7 @@ public class Application {
         return data;
     }
 
-    @DeleteMapping("/pages/{id}") // Удаление страницы
+    @DeleteMapping("/posts/{id}") // Удаление страницы
     public void destroy(@PathVariable String id) {
         posts.removeIf(p -> p.getId().equals(id));
     }
