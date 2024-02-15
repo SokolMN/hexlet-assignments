@@ -75,6 +75,5 @@ public class ProductsController {
         var productDTO = productMapper.map(product);
         return productDTO;
     }
-
     // END
 }
