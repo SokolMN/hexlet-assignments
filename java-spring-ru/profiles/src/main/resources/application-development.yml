@@ -1,5 +1,14 @@
 # BEGIN
-url: jdbc:h2:mem:test
-username: sa
-password: 123
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  output:
+    ansi:
+      enabled: always
+  datasource:
+    url: jdbc:h2:mem:test
+    username: sa
+    password: 123
 # END
